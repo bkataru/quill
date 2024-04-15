@@ -1,0 +1,7 @@
+// just a dummy, copy to user keybindings for any effect on workspace
+[{
+    "key": "ctrl+m",
+    "command": "editor.emmet.action.balanceOut",
+    "when": "editorTextFocus"
+}
+]
