@@ -1,10 +1,21 @@
-import type React from 'react'
+import type { FC, ReactNode } from 'react'
 
-const MaxWidthWrapper: React.FC<{
+import { cn } from '@/lib/utils'
+
+const MaxWidthWrapper: FC<{
   className?: string
-  children: React.ReactNode
+  children: ReactNode
 }> = ({ className, children }) => {
-  return <div></div>
+  return (
+    <div
+      className={cn(
+        'mx-auto w-full max-w-screen-xl px-2.5 md:px-20',
+        className
+      )}
+    >
+      {children}
+    </div>
+  )
 }
 
 export default MaxWidthWrapper
